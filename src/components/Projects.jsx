@@ -75,7 +75,7 @@ const PROJECTS = [
 
 export default function Projects() {
   return (
-    <section className="py-24 px-0">
+    <section id="projects" className="py-12 md:py-24 px-6 lg:px-0">
       <div className="max-w-4xl mx-auto">
         <h2 className="flex items-center gap-2 text-3xl font-semibold mb-8">
           <IconCode stroke={2} />

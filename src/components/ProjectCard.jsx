@@ -2,8 +2,8 @@ import { IconBrandGithub, IconLink } from '@tabler/icons-react';
 
 export default function ProjectCard({ image, title, description, repoLink, deployLink, tags }) {
   return (
-    <div className="grid grid-cols-2 gap-6">
-      <img className="object-contain h-60 shadow-lg rounded-lg border border-secondary-100" src={image} alt={`Imagen de ${title}`} />
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <img className="object-contain h-56 md:h-60 shadow-lg rounded-lg border border-secondary-100" src={image} alt={`Imagen de ${title}`} />
       <div className='self-center'>
         <h4 className="text-2xl font-bold mb-2">{title}</h4>
         <div className="flex gap-x-2 mb-4">
