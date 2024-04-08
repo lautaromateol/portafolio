@@ -1,4 +1,4 @@
-import { IconBrandCss3, IconBrandHtml5, IconBrandJavascript, IconBrandMongodb, IconBrandNextjs, IconBrandRedux, IconBrandTailwind, IconBrandVite, IconCode } from "@tabler/icons-react"
+import { IconBrandCss3, IconBrandHtml5, IconBrandJavascript, IconBrandMongodb, IconBrandNextjs, IconBrandRedux, IconBrandTailwind, IconBrandVite, IconCode, IconBrandNodejs } from "@tabler/icons-react"
 import ProjectCard from "./ProjectCard"
 
 const TAGS = {
@@ -43,6 +43,11 @@ const TAGS = {
     name: "Javascript",
     icon: <IconBrandJavascript className="w-4 h-4"/>,
     styles: "bg-[#ffd43b]"
+  },
+  NodeJS: {
+    name: "NodeJS",
+    icon: <IconBrandNodejs className="w-4 h-4"/>,
+    styles: "bg-[#51cf66]"
   }
 }
 
@@ -53,7 +58,7 @@ const PROJECTS = [
     image: "./img/projects/pure-decor.png",
     repoLink: "https://github.com/lautaromateol/demo-ecom",
     deployLink: "https://sup-ecom.vercel.app/",
-    tags: [TAGS.NextJS, TAGS.MongoDB, TAGS.TailwindCSS]
+    tags: [TAGS.NextJS, TAGS.NodeJS, TAGS.MongoDB, TAGS.TailwindCSS]
   },
   {
     title: "Rick & Morty SPA",
