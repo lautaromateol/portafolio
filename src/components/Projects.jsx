@@ -53,12 +53,20 @@ const TAGS = {
 
 const PROJECTS = [
   {
-    title: "Pure Decor e-commerce",
+    title: "Pure Decor - e-commerce",
     description: "Tienda online de muebles para el hogar con diseño responsivo y múltiples funcionalidades. Carrito de compras, pagos con Stripe, sección de comentarios, perfil y autenticación de usuario, panel de administración y más.",
     image: "./img/projects/pure-decor.png",
     repoLink: "https://github.com/lautaromateol/demo-ecom",
     deployLink: "https://sup-ecom.vercel.app/",
     tags: [TAGS.NextJS, TAGS.NodeJS, TAGS.MongoDB, TAGS.TailwindCSS]
+  },
+  {
+    title: "Lumina - gestión de proyectos",
+    description: "Aplicación de gestión de proyectos desarrollada con Javascript utilizando una arquitectura MVC. Permite crear proyectos con sus respectivas tareas, sub-tareas, y arrastrarlas entre contenedores para modificar su status.",
+    image: "./img/projects/lumina.png",
+    repoLink: "https://github.com/lautaromateol/task-management-app",
+    deployLink: "https://lumina-task-app.netlify.app/",
+    tags: [TAGS.Html, TAGS.Css, TAGS.Javascript]
   },
   {
     title: "Rick & Morty SPA",
@@ -69,7 +77,7 @@ const PROJECTS = [
     tags: [TAGS.ViteJS, TAGS.Redux, TAGS.TailwindCSS]
   },
   {
-    title: "FitSync landing page",
+    title: "FitSync - landing page",
     description: "Landing page para aplicacion ficticia desarrollada unicamente en HTML, CSS y Javascript.",
     image: "./img/projects/fitsync.png",
     repoLink: "https://github.com/lautaromateol/fitsync-landing",
