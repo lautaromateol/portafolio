@@ -1,4 +1,4 @@
-import { IconBrandCss3, IconBrandHtml5, IconBrandJavascript, IconBrandMongodb, IconBrandNextjs, IconBrandRedux, IconBrandTailwind, IconBrandVite, IconCode, IconBrandNodejs } from "@tabler/icons-react"
+import { IconBrandCss3, IconBrandHtml5, IconBrandJavascript, IconBrandMongodb, IconBrandNextjs, IconBrandRedux, IconBrandTailwind, IconBrandVite, IconCode, IconBrandNodejs, IconBrandSupabase } from "@tabler/icons-react"
 import ProjectCard from "./ProjectCard"
 
 const TAGS = {
@@ -48,10 +48,24 @@ const TAGS = {
     name: "NodeJS",
     icon: <IconBrandNodejs className="w-4 h-4"/>,
     styles: "bg-[#51cf66]"
+  },
+  Supabase: {
+    name: "Supabase",
+    icon: <IconBrandSupabase className="w-4 h-4" />,
+    styles: "bg-[#51cf30]"
   }
+
 }
 
 const PROJECTS = [
+  {
+    title: "FreelancePRO - gestión de proyectos",
+    description: "Aplicación de gestión de proyectos creada con React y Supabase. Posee autenticación, cada usuario puede crear proyectos, asignarles fecha limite, asignar tareas, presupuesto y añadir gastos. Cuenta con un panel de seguimiento.",
+    image: "./img/projects/freelancepro.png",
+    repoLink: "https://github.com/lautaromateol/freelancepro",
+    deployLink: "https://freelancepro-mu.vercel.app/",
+    tags: [TAGS.ViteJS, TAGS.Supabase, TAGS.TailwindCSS]
+  },
   {
     title: "Pure Decor - e-commerce",
     description: "Tienda online de muebles para el hogar con diseño responsivo y múltiples funcionalidades. Carrito de compras, pagos con Stripe, sección de comentarios, perfil y autenticación de usuario, panel de administración y más.",
@@ -61,8 +75,8 @@ const PROJECTS = [
     tags: [TAGS.NextJS, TAGS.NodeJS, TAGS.MongoDB, TAGS.TailwindCSS]
   },
   {
-    title: "Lumina - gestión de proyectos",
-    description: "Aplicación de gestión de proyectos desarrollada con Javascript utilizando una arquitectura MVC. Permite crear proyectos con sus respectivas tareas, sub-tareas, y arrastrarlas entre contenedores para modificar su status.",
+    title: "Lumina - gestión de tareas",
+    description: "Aplicación de gestión de tareas desarrollada con Javascript utilizando una arquitectura MVC. Permite crear proyectos con sus respectivas tareas, sub-tareas, y arrastrarlas entre contenedores para modificar su status.",
     image: "./img/projects/lumina.png",
     repoLink: "https://github.com/lautaromateol/task-management-app",
     deployLink: "https://lumina-task-app.netlify.app/",
@@ -98,6 +112,7 @@ export default function Projects() {
         {PROJECTS.map(({title, description, image, deployLink, repoLink, tags}) => {
           return(
             <ProjectCard 
+            key={title}
             title={title} 
             description={description} 
             image={image} 
