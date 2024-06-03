@@ -1,7 +1,12 @@
-import { IconBrandCss3, IconBrandHtml5, IconBrandJavascript, IconBrandMongodb, IconBrandNextjs, IconBrandRedux, IconBrandTailwind, IconBrandVite, IconCode, IconBrandNodejs, IconBrandSupabase } from "@tabler/icons-react"
+import { IconBrandCss3, IconBrandHtml5, IconBrandJavascript, IconBrandMongodb, IconBrandNextjs, IconBrandRedux, IconBrandTailwind, IconBrandVite, IconCode, IconBrandNodejs, IconBrandSupabase, IconBrandReact } from "@tabler/icons-react"
 import ProjectCard from "./ProjectCard"
 
 const TAGS = {
+  React: {
+    name: "React",
+    icon: <IconBrandReact className="size-4" />,
+    styles: "bg-[#364fc7]"
+  },
   NextJS:
   {
     name: "NextJS",
@@ -60,11 +65,11 @@ const TAGS = {
 const PROJECTS = [
   {
     title: "FreelancePRO - gestión de proyectos",
-    description: "Aplicación de gestión de proyectos creada con React y Supabase. Posee autenticación, cada usuario puede crear proyectos, asignarles fecha limite, asignar tareas, presupuesto y añadir gastos. Cuenta con un panel de seguimiento.",
+    description: "Aplicación de gestión de proyectos creada con React y Supabase. Posee autenticación, cada usuario puede crear proyectos, asignarles fecha limite, asignar tareas, presupuesto y añadir gastos. Cuenta con un panel de seguimiento, calendario y diseño responsivo.",
     image: "./img/projects/freelancepro.png",
     repoLink: "https://github.com/lautaromateol/freelancepro",
     deployLink: "https://freelancepro-mu.vercel.app/",
-    tags: [TAGS.ViteJS, TAGS.Supabase, TAGS.TailwindCSS]
+    tags: [TAGS.React, TAGS.Supabase, TAGS.TailwindCSS]
   },
   {
     title: "Pure Decor - e-commerce",
@@ -88,7 +93,7 @@ const PROJECTS = [
     image: "./img/projects/rick-and-morty.png",
     repoLink: "https://github.com/lautaromateol/SPA-rick-and-morty",
     deployLink: "https://rick-and-morty-wiki-lautaromateol.vercel.app/",
-    tags: [TAGS.ViteJS, TAGS.Redux, TAGS.TailwindCSS]
+    tags: [TAGS.React, TAGS.Redux, TAGS.TailwindCSS]
   },
   {
     title: "FitSync - landing page",
