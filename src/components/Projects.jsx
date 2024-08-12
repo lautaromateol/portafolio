@@ -64,6 +64,14 @@ const TAGS = {
 
 const PROJECTS = [
   {
+    title: "Projectly - gestión de proyectos para devs",
+    description: "Aplicación de gestión de proyectos orientada a desarrolladores, desarrollada en NextJS. Cada usuario puede crear proyectos, asignarle historias de usuario, tareas, requerimentos funcionales y un stack tecnologico. Integración con IA proximamente.",
+    image: "./img/projects/projectly.png",
+    repoLink: "https://github.com/lautaromateol/projectly",
+    deployLink: "https://projectly-tan.vercel.app/",
+    tags: [TAGS.NextJS, TAGS.Supabase, TAGS.TailwindCSS]
+  },
+  {
     title: "FreelancePRO - gestión de proyectos",
     description: "Aplicación de gestión de proyectos creada con React y Supabase. Posee autenticación, cada usuario puede crear proyectos, asignarles fecha limite, asignar tareas, presupuesto y añadir gastos. Cuenta con un panel de seguimiento, calendario y diseño responsivo.",
     image: "./img/projects/freelancepro.png",
@@ -79,14 +87,14 @@ const PROJECTS = [
     deployLink: "https://sup-ecom.vercel.app/",
     tags: [TAGS.NextJS, TAGS.NodeJS, TAGS.MongoDB, TAGS.TailwindCSS]
   },
-  {
-    title: "Lumina - gestión de tareas",
-    description: "Aplicación de gestión de tareas desarrollada con Javascript utilizando una arquitectura MVC. Permite crear proyectos con sus respectivas tareas, sub-tareas, y arrastrarlas entre contenedores para modificar su status.",
-    image: "./img/projects/lumina.png",
-    repoLink: "https://github.com/lautaromateol/task-management-app",
-    deployLink: "https://lumina-task-app.netlify.app/",
-    tags: [TAGS.Html, TAGS.Css, TAGS.Javascript]
-  },
+  // {
+  //   title: "Lumina - gestión de tareas",
+  //   description: "Aplicación de gestión de tareas desarrollada con Javascript utilizando una arquitectura MVC. Permite crear proyectos con sus respectivas tareas, sub-tareas, y arrastrarlas entre contenedores para modificar su status.",
+  //   image: "./img/projects/lumina.png",
+  //   repoLink: "https://github.com/lautaromateol/task-management-app",
+  //   deployLink: "https://lumina-task-app.netlify.app/",
+  //   tags: [TAGS.Html, TAGS.Css, TAGS.Javascript]
+  // },
   {
     title: "Rick & Morty SPA",
     description: "Aplicacion de pagina individual, consume la API de Rick & Morty e utiliza Redux para gestion de estado global.",
@@ -95,14 +103,14 @@ const PROJECTS = [
     deployLink: "https://rick-and-morty-wiki-lautaromateol.vercel.app/",
     tags: [TAGS.React, TAGS.Redux, TAGS.TailwindCSS]
   },
-  {
-    title: "FitSync - landing page",
-    description: "Landing page para aplicacion ficticia desarrollada unicamente en HTML, CSS y Javascript.",
-    image: "./img/projects/fitsync.png",
-    repoLink: "https://github.com/lautaromateol/fitsync-landing",
-    deployLink: "https://fitsync.netlify.app/",
-    tags: [TAGS.Html, TAGS.Css, TAGS.Javascript]
-  }
+  // {
+  //   title: "FitSync - landing page",
+  //   description: "Landing page para aplicacion ficticia desarrollada unicamente en HTML, CSS y Javascript.",
+  //   image: "./img/projects/fitsync.png",
+  //   repoLink: "https://github.com/lautaromateol/fitsync-landing",
+  //   deployLink: "https://fitsync.netlify.app/",
+  //   tags: [TAGS.Html, TAGS.Css, TAGS.Javascript]
+  // }
 ]
 
 export default function Projects() {
