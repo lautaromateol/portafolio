@@ -10,48 +10,48 @@ const TAGS = {
   NextJS:
   {
     name: "NextJS",
-    icon: <IconBrandNextjs className="w-4 h-4"/>,
+    icon: <IconBrandNextjs className="w-4 h-4" />,
     styles: "bg-black"
   },
   MongoDB:
   {
     name: "MongoDB",
-    icon: <IconBrandMongodb className="w-4 h-4"/>,
+    icon: <IconBrandMongodb className="w-4 h-4" />,
     styles: "bg-[#2b8a3e]"
   },
   ViteJS: {
     name: "ViteJS",
-    icon: <IconBrandVite className="w-4 h-4"/>,
+    icon: <IconBrandVite className="w-4 h-4" />,
     styles: "bg-[#364fc7]"
   },
   TailwindCSS: {
     name: "TailwindCSS",
-    icon: <IconBrandTailwind className="w-4 h-4"/>,
+    icon: <IconBrandTailwind className="w-4 h-4" />,
     styles: "bg-[#003159]"
   },
   Redux: {
     name: "Redux",
-    icon: <IconBrandRedux className="w-4 h-4"/>,
+    icon: <IconBrandRedux className="w-4 h-4" />,
     styles: "bg-[#5f3dc4]"
-  }, 
+  },
   Html: {
     name: "HTML",
-    icon: <IconBrandHtml5 className="w-4 h-4"/>,
+    icon: <IconBrandHtml5 className="w-4 h-4" />,
     styles: "bg-[#f76707]"
   },
   Css: {
     name: "CSS",
-    icon: <IconBrandCss3 className="w-4 h-4"/>,
+    icon: <IconBrandCss3 className="w-4 h-4" />,
     styles: "bg-[#228be6]"
   },
-  Javascript: { 
+  Javascript: {
     name: "Javascript",
-    icon: <IconBrandJavascript className="w-4 h-4"/>,
+    icon: <IconBrandJavascript className="w-4 h-4" />,
     styles: "bg-[#ffd43b]"
   },
   NodeJS: {
     name: "NodeJS",
-    icon: <IconBrandNodejs className="w-4 h-4"/>,
+    icon: <IconBrandNodejs className="w-4 h-4" />,
     styles: "bg-[#51cf66]"
   },
   Supabase: {
@@ -63,6 +63,14 @@ const TAGS = {
 }
 
 const PROJECTS = [
+  {
+    title: "Adsync- gestión de agencias",
+    description: "Software as a service dedicado a la gestión de agencias de marketing. Posee funcionalidades de registro y edición de clientes, vinculación con redes sociales, creación de campañas publicitarias en Meta, etc. Desarrollo en curso.",
+    image: "./img/projects/adsync.png",
+    repoLink: "https://github.com/lautaromateol/smma-management",
+    deployLink: "https://adsync.vercel.app/",
+    tags: [TAGS.NextJS, TAGS.TailwindCSS]
+  },
   {
     title: "Projectly - gestión de proyectos para devs",
     description: "Aplicación de gestión de proyectos orientada a desarrolladores, desarrollada en NextJS. Cada usuario puede crear proyectos, asignarle historias de usuario, tareas, requerimentos funcionales y un stack tecnologico. Integración con IA proximamente.",
@@ -87,30 +95,6 @@ const PROJECTS = [
     deployLink: "https://sup-ecom.vercel.app/",
     tags: [TAGS.NextJS, TAGS.NodeJS, TAGS.MongoDB, TAGS.TailwindCSS]
   },
-  // {
-  //   title: "Lumina - gestión de tareas",
-  //   description: "Aplicación de gestión de tareas desarrollada con Javascript utilizando una arquitectura MVC. Permite crear proyectos con sus respectivas tareas, sub-tareas, y arrastrarlas entre contenedores para modificar su status.",
-  //   image: "./img/projects/lumina.png",
-  //   repoLink: "https://github.com/lautaromateol/task-management-app",
-  //   deployLink: "https://lumina-task-app.netlify.app/",
-  //   tags: [TAGS.Html, TAGS.Css, TAGS.Javascript]
-  // },
-  {
-    title: "Rick & Morty SPA",
-    description: "Aplicacion de pagina individual, consume la API de Rick & Morty e utiliza Redux para gestion de estado global.",
-    image: "./img/projects/rick-and-morty.png",
-    repoLink: "https://github.com/lautaromateol/SPA-rick-and-morty",
-    deployLink: "https://rick-and-morty-wiki-lautaromateol.vercel.app/",
-    tags: [TAGS.React, TAGS.Redux, TAGS.TailwindCSS]
-  },
-  // {
-  //   title: "FitSync - landing page",
-  //   description: "Landing page para aplicacion ficticia desarrollada unicamente en HTML, CSS y Javascript.",
-  //   image: "./img/projects/fitsync.png",
-  //   repoLink: "https://github.com/lautaromateol/fitsync-landing",
-  //   deployLink: "https://fitsync.netlify.app/",
-  //   tags: [TAGS.Html, TAGS.Css, TAGS.Javascript]
-  // }
 ]
 
 export default function Projects() {
@@ -122,19 +106,19 @@ export default function Projects() {
           Proyectos
         </h2>
         <div className="flex flex-col gap-y-8">
-        {PROJECTS.map(({title, description, image, deployLink, repoLink, tags}) => {
-          return(
-            <ProjectCard 
-            key={title}
-            title={title} 
-            description={description} 
-            image={image} 
-            deployLink={deployLink} 
-            repoLink={repoLink}
-            tags={tags}
-            />
-          )
-        })}
+          {PROJECTS.map(({ title, description, image, deployLink, repoLink, tags }) => {
+            return (
+              <ProjectCard
+                key={title}
+                title={title}
+                description={description}
+                image={image}
+                deployLink={deployLink}
+                repoLink={repoLink}
+                tags={tags}
+              />
+            )
+          })}
         </div>
       </div>
     </section>
