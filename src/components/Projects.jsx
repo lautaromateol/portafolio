@@ -58,11 +58,18 @@ const TAGS = {
     name: "Supabase",
     icon: <IconBrandSupabase className="w-4 h-4" />,
     styles: "bg-[#51cf30]"
-  }
-
+  },
 }
 
 const PROJECTS = [
+  {
+    title: "FreelancePRO - gestión de proyectos",
+    description: "Aplicación de gestión de gastos para freelancers creada con NextJS, Hono y React Query. Posee autenticación, creación de proyectos, asignación de fecha, Kanban Board, presupuesto y transacciónes. Cuenta con un registro de transacciones general e importación via CSV. Posee panel de seguimiento de gastos, filtrado por fechas y cuentas, calendario y diseño responsivo.",
+    image: "./img/projects/freelancepro.png",
+    repoLink: "https://github.com/lautaromateol/freelance-pro",
+    deployLink: "https://freelance-pro-gray.vercel.app/",
+    tags: [TAGS.NextJS, TAGS.TailwindCSS]
+  },
   {
     title: "Adsync- gestión de agencias",
     description: "Software as a service dedicado a la gestión de agencias de marketing. Posee funcionalidades de registro y edición de clientes, vinculación con redes sociales, creación de campañas publicitarias en Meta, etc. Desarrollo en curso.",
@@ -78,14 +85,6 @@ const PROJECTS = [
     repoLink: "https://github.com/lautaromateol/projectly",
     deployLink: "https://projectly-tan.vercel.app/",
     tags: [TAGS.NextJS, TAGS.Supabase, TAGS.TailwindCSS]
-  },
-  {
-    title: "FreelancePRO - gestión de proyectos",
-    description: "Aplicación de gestión de proyectos creada con React y Supabase. Posee autenticación, cada usuario puede crear proyectos, asignarles fecha limite, asignar tareas, presupuesto y añadir gastos. Cuenta con un panel de seguimiento, calendario y diseño responsivo.",
-    image: "./img/projects/freelancepro.png",
-    repoLink: "https://github.com/lautaromateol/freelancepro",
-    deployLink: "https://freelancepro-mu.vercel.app/",
-    tags: [TAGS.React, TAGS.Supabase, TAGS.TailwindCSS]
   },
   {
     title: "Pure Decor - e-commerce",
