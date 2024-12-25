@@ -61,8 +61,8 @@ const TAGS = {
   },
   Prisma: {
     name: "Prisma",
-    icon: <IconBrandPrisma />,
-    style: "bg-[#225]"
+     icon: <IconBrandPrisma className="w-4 h-4" />,
+    styles: "bg-[#228be6]"
   },
 }
 
