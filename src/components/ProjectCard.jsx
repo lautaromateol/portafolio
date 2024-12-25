@@ -7,9 +7,9 @@ export default function ProjectCard({ image, title, description, repoLink, deplo
       <div className='self-center'>
         <h4 className="text-2xl font-bold mb-2">{title}</h4>
         <div className="flex gap-x-2 mb-4">
-        {tags.map(({name, styles, icon}) => {
+        {tags.map(({name, styles, icon}, i) => {
           return(
-            <div className={`${styles} flex items-center justify-center gap-x-1 px-2 py-1 text-xs text-white rounded-full`}>
+            <div className={`${styles} flex items-center justify-center gap-x-1 px-2 py-1 text-xs text-white rounded-full`} key={i}>
               {icon}
               {name}
             </div>
