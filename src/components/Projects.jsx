@@ -1,4 +1,4 @@
-import { IconBrandCss3, IconBrandHtml5, IconBrandJavascript, IconBrandMongodb, IconBrandNextjs, IconBrandRedux, IconBrandTailwind, IconBrandVite, IconCode, IconBrandNodejs, IconBrandSupabase, IconBrandReact } from "@tabler/icons-react"
+import { IconBrandCss3, IconBrandHtml5, IconBrandJavascript, IconBrandMongodb, IconBrandNextjs, IconBrandRedux, IconBrandTailwind, IconBrandVite, IconCode, IconBrandNodejs, IconBrandSupabase, IconBrandReact, IconBrandPrisma } from "@tabler/icons-react"
 import ProjectCard from "./ProjectCard"
 
 const TAGS = {
@@ -59,24 +59,29 @@ const TAGS = {
     icon: <IconBrandSupabase className="w-4 h-4" />,
     styles: "bg-[#51cf30]"
   },
+  Prisma: {
+    name: "Prisma",
+    icon: <IconBrandPrisma />,
+    style: "bg-[#225]"
+  },
 }
 
 const PROJECTS = [
   {
-    title: "FreelancePRO - gestión de proyectos",
+    title: "FreelancePRO - gestión de gastos",
     description: "Aplicación de gestión de gastos para freelancers creada con NextJS, Hono y React Query. Posee autenticación, creación de proyectos, asignación de fecha, Kanban Board, presupuesto y transacciónes. Cuenta con un registro de transacciones general e importación via CSV. Posee panel de seguimiento de gastos, filtrado por fechas y cuentas, calendario y diseño responsivo.",
     image: "./img/projects/freelancepro.png",
     repoLink: "https://github.com/lautaromateol/freelance-pro",
     deployLink: "https://freelance-pro-gray.vercel.app/",
-    tags: [TAGS.NextJS, TAGS.TailwindCSS]
+    tags: [TAGS.NextJS, TAGS.Prisma, TAGS.TailwindCSS]
   },
   {
-    title: "Adsync- gestión de agencias",
+    title: "Adsync - gestión de agencias",
     description: "Software as a service dedicado a la gestión de agencias de marketing. Posee funcionalidades de registro y edición de clientes, vinculación con redes sociales, creación de campañas publicitarias en Meta, etc. Desarrollo en curso.",
     image: "./img/projects/adsync.png",
     repoLink: "https://github.com/lautaromateol/smma-management",
     deployLink: "https://adsync.vercel.app/",
-    tags: [TAGS.NextJS, TAGS.TailwindCSS]
+    tags: [TAGS.NextJS,  TAGS.Prisma, TAGS.TailwindCSS]
   },
   {
     title: "Projectly - gestión de proyectos para devs",
