@@ -1,4 +1,4 @@
-import { IconBrandCss3, IconBrandHtml5, IconBrandJavascript, IconBrandMongodb, IconBrandNextjs, IconBrandRedux, IconBrandTailwind, IconBrandVite, IconCode, IconBrandNodejs, IconBrandSupabase, IconBrandReact, IconBrandPrisma } from "@tabler/icons-react"
+import { IconBrandCss3, IconBrandHtml5, IconBrandJavascript, IconBrandMongodb, IconBrandNextjs, IconBrandRedux, IconBrandTailwind, IconBrandVite, IconCode, IconBrandNodejs, IconBrandSupabase, IconBrandReact, IconBrandPrisma, IconBrandTypescript } from "@tabler/icons-react"
 import ProjectCard from "./ProjectCard"
 
 const TAGS = {
@@ -61,19 +61,32 @@ const TAGS = {
   },
   Prisma: {
     name: "Prisma",
-     icon: <IconBrandPrisma className="w-4 h-4" />,
+    icon: <IconBrandPrisma className="w-4 h-4" />,
     styles: "bg-[#228be6]"
   },
+  Typescript: {
+    name: "Typescript",
+    icon: <IconBrandTypescript className="size-4" />,
+    styles: "bg-[#228be6]"
+  }
 }
 
 const PROJECTS = [
+  {
+    title: "Projectly - gestión de proyectos para devs",
+    description: "Aplicación de gestión de proyectos orientada a desarrolladores, desarrollada en NextJS. Cada usuario puede crear espacios de trabajo compartidos, proyectos y tareas dentro de los mismos. Cuenta con funcionalidades como sección de comentarios, registro de actividad, Kanban Board y tabla de tareas, calendario y mas.",
+    image: "./img/projects/projectly.png",
+    repoLink: "https://github.com/lautaromateol/projectly-new",
+    deployLink: "https://projectly-new.vercel.app/",
+    tags: [TAGS.NextJS, TAGS.Typescript, TAGS.TailwindCSS]
+  },
   {
     title: "FreelancePRO - gestión de gastos",
     description: "Aplicación de gestión de gastos para freelancers creada con NextJS, Hono y React Query. Posee autenticación, creación de proyectos, asignación de fecha, Kanban Board, presupuesto y transacciónes. Cuenta con un registro de transacciones general e importación via CSV. Posee panel de seguimiento de gastos, filtrado por fechas y cuentas, calendario y diseño responsivo.",
     image: "./img/projects/freelancepro.png",
     repoLink: "https://github.com/lautaromateol/freelance-pro",
     deployLink: "https://freelance-pro-gray.vercel.app/",
-    tags: [TAGS.NextJS, TAGS.Prisma, TAGS.TailwindCSS]
+    tags: [TAGS.NextJS, TAGS.Typescript, TAGS.TailwindCSS]
   },
   {
     title: "Adsync - gestión de agencias",
@@ -81,15 +94,7 @@ const PROJECTS = [
     image: "./img/projects/adsync.png",
     repoLink: "https://github.com/lautaromateol/smma-management",
     deployLink: "https://adsync.vercel.app/",
-    tags: [TAGS.NextJS,  TAGS.Prisma, TAGS.TailwindCSS]
-  },
-  {
-    title: "Projectly - gestión de proyectos para devs",
-    description: "Aplicación de gestión de proyectos orientada a desarrolladores, desarrollada en NextJS. Cada usuario puede crear proyectos, asignarle historias de usuario, tareas, requerimentos funcionales y un stack tecnologico. Integración con IA proximamente.",
-    image: "./img/projects/projectly.png",
-    repoLink: "https://github.com/lautaromateol/projectly",
-    deployLink: "https://projectly-tan.vercel.app/",
-    tags: [TAGS.NextJS, TAGS.Supabase, TAGS.TailwindCSS]
+    tags: [TAGS.NextJS, TAGS.Prisma, TAGS.TailwindCSS]
   },
   {
     title: "Pure Decor - e-commerce",
